@@ -1,0 +1,75 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "easecar (dev)",
+            "request": "launch",
+            "type": "dart",
+            "program": "lib/main.dart",
+            "args": [
+                "--flavor",
+                "development",
+                "--dart-define=FLAVOR=development"
+            ]
+        },
+        {
+            "name": "easecar (prod)",
+            "request": "launch",
+            "type": "dart",
+            "program": "lib/main.dart",
+            "args": [
+                "--flavor",
+                "production",
+                "--dart-define=FLAVOR=production"
+            ]
+        },
+        {
+            "name": "easecar (development, profile mode)",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "profile",
+            "program": "lib/main.dart",
+            "args": [
+                "--flavor",
+                "development",
+                "--dart-define=FLAVOR=development"
+            ]
+        },
+        {
+            "name": "easecar (production, profile mode)",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "profile",
+            "program": "lib/main.dart",
+            "args": [
+                "--flavor",
+                "production",
+                "--dart-define=FLAVOR=production"
+            ]
+        },
+        {
+            "name": "easecar (development, release mode)",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "release",
+            "program": "lib/main.dart",
+            "args": [
+                "--flavor",
+                "development",
+                "--dart-define=FLAVOR=development"
+            ]
+        },
+        {
+            "name": "easecar (production, release mode)",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "release",
+            "program": "lib/main.dart",
+            "args": [
+                "--flavor",
+                "production",
+                "--dart-define=FLAVOR=production"
+            ]
+        }
+    ]
+}
