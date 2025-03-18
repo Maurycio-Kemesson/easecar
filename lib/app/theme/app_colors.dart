@@ -10,4 +10,6 @@ class AppColors {
   static const Color textActivity = Color(0xff736464);
   static const Color green = Color(0xff1B9818);
   static const Color statePadding = Color(0xffDBCB38);
+  static const Color lightGray = Color(0xffEDEDED);
+  static const Color softGray = Color(0xffCAC4C4);
 }

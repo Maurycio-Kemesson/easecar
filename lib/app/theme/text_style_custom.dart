@@ -50,7 +50,7 @@ class TextStyleCustom {
     fontWeight: FontWeight.normal,
   );
 
-  static TextStyle titleNavigation = const TextStyle(
+  static TextStyle titleDefault = const TextStyle(
     fontSize: 9.0,
     color: Colors.white,
     fontWeight: FontWeight.w600,

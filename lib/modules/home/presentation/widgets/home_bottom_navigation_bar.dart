@@ -75,7 +75,7 @@ class _HomeBottomNavigationBarState extends State<HomeBottomNavigationBar> {
               fit: BoxFit.scaleDown,
               child: Text(
                 _getLabel(index),
-                style: TextStyleCustom.titleNavigation,
+                style: TextStyleCustom.titleDefault,
               ),
             ),
           ],

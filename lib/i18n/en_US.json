@@ -122,5 +122,7 @@
     "bottomNavigationBarHome": "Home",
     "bottomNavigationBarAdvertise": "Advertise",
     "bottomNavigationBarMessage": "Message",
-    "bottomNavigationBarProfile": "Profile"  
+    "bottomNavigationBarProfile": "Profile",
+
+    "homeSeach": "Seach"    
 } 

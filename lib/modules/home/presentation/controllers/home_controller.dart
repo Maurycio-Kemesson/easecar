@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 abstract class HomeController extends ChangeNotifier {
   ValueNotifier<int> get page;
+  TextEditingController get searchController;
   loadDependences({
     required int pageIndex,
     required PageController pageController,
@@ -17,6 +18,9 @@ class HomeControllerImp extends HomeController {
 
   @override
   ValueNotifier<int> page = ValueNotifier(0);
+
+  @override
+  TextEditingController searchController = TextEditingController();
 
   @override
   loadDependences({
