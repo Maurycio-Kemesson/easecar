@@ -1,5 +1,7 @@
-import 'package:easecar/modules/login/login_module.dart';
 import 'package:flutter_modular/flutter_modular.dart';
+
+import 'package:easecar/modules/home/home_module.dart';
+import 'package:easecar/modules/login/login_module.dart';
 
 const appTransition = TransitionType.rightToLeft;
 
@@ -13,6 +15,11 @@ class AppModule extends Module {
       Modular.initialRoute,
       transition: appTransition,
       module: LoginModule(),
+    );
+    r.module(
+      Modular.initialRoute,
+      transition: appTransition,
+      module: HomeModule(),
     );
   }
 }

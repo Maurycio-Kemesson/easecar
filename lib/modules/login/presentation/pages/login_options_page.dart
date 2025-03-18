@@ -1,3 +1,4 @@
+import 'package:easecar/app/app_routes.dart';
 import 'package:easecar/app/theme/app_colors.dart';
 import 'package:easecar/app/theme/text_style_custom.dart';
 import 'package:easecar/core/widgets/body_custom.dart';
@@ -66,7 +67,7 @@ class _LoginOptionsPageState extends State<LoginOptionsPage> {
                 title: 'login_without_registration'.i18n(),
                 underlinedText: true,
                 onPressed: () {
-                  Modular.to.navigate('/home');
+                  Modular.to.navigate(AppRoutes.home);
                 },
               ),
             ),

@@ -117,5 +117,10 @@
     "new_password" : "New password:",
     "take_picture" : "Take picture",
     "choose_from_gallery" : "Choose from gallery",
-    "save" : "Save"
+    "save" : "Save",
+
+    "bottomNavigationBarHome": "Home",
+    "bottomNavigationBarAdvertise": "Advertise",
+    "bottomNavigationBarMessage": "Message",
+    "bottomNavigationBarProfile": "Profile"  
 } 

@@ -12,6 +12,7 @@ class AppWidget extends StatelessWidget {
       title: 'EaseCar',
       theme: ThemeData(primarySwatch: Colors.blue),
       routerConfig: Modular.routerConfig,
+      debugShowCheckedModeBanner: false,
       supportedLocales: const [
         Locale('en', 'US'),
         Locale('pt', 'BR'),

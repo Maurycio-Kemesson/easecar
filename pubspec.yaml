@@ -68,7 +68,9 @@ flutter:
   assets:
     - lib/i18n/
     - assets/logo/
- 
+    - assets/images/
+    - assets/icons/
+     
   fonts:
     - family: rubik
       fonts:

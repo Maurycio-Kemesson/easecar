@@ -49,4 +49,10 @@ class TextStyleCustom {
     color: Color.fromARGB(255, 252, 161, 128),
     fontWeight: FontWeight.normal,
   );
+
+  static TextStyle titleNavigation = const TextStyle(
+    fontSize: 9.0,
+    color: Colors.white,
+    fontWeight: FontWeight.w600,
+  );
 }

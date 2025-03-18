@@ -1,5 +1,7 @@
+import 'package:easecar/app/app_routes.dart';
 import 'package:easecar/modules/login/domain/usecases/login_usecase.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_modular/flutter_modular.dart';
 
 abstract class LoginController extends ChangeNotifier {
   ValueNotifier<bool> get isLoading;
@@ -77,6 +79,7 @@ class LoginControllerImp extends LoginController {
       },
       (data) async {
         isLoading.value = false;
+        Modular.to.pushNamed(AppRoutes.home);
       },
     );
   }

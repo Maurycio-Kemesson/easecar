@@ -117,6 +117,10 @@
     "new_password" : "Nova senha:",
     "take_picture" : "Tirar foto",
     "choose_from_gallery" : "Escolher da galeria",
-    "save" : "Salvar"
-    
+    "save" : "Salvar",
+
+    "bottomNavigationBarHome": "Início",
+    "bottomNavigationBarAdvertise": "Anunciar",
+    "bottomNavigationBarMessage": "Mensagem",
+    "bottomNavigationBarProfile": "Perfil"    
 }
