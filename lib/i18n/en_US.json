@@ -124,5 +124,18 @@
     "bottomNavigationBarMessage": "Message",
     "bottomNavigationBarProfile": "Profile",
 
-    "homeSeach": "Seach"    
+    "homeSeach": "Seach",
+    "homeNewCars": "New cars",
+    "homePreOwnedCars": "Pre-owned cars",
+    "homeBrands": "Brands",
+    "homeFrom": "From",  
+    "homeSeeDetails": "See details",
+    "homeErrorLoadingBrandsMessage": "An error occurred while listing brands. Please try again.",
+    "homeErrorNoVehiclesForBrandMessage": "No vehicles available for this brand.\nTry selecting another option.",
+
+    "vehicleStatusApproved": "Approved",
+    "vehicleStatusRejected": "Rejected",
+    "vehicleStatusUnderAnalysis": "Under analysis",
+
+    "vehicleStoreTypeDealership": "Dealership"
 } 

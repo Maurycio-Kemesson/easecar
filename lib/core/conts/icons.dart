@@ -8,4 +8,10 @@ class AppIcons {
   static final notification = ConstsAssets.icon('notification_icon.svg');
   static final drawer = ConstsAssets.icon('drawer_icon.svg');
   static final search = ConstsAssets.icon('search_icon.svg');
+  static final edit = ConstsAssets.icon('edit_icon.svg');
+  static final honda = ConstsAssets.icon('honda_icon.svg');
+  static final citroen = ConstsAssets.icon('citroen_icon.svg');
+  static final ford = ConstsAssets.icon('ford_icon.svg');
+  static final fiat = ConstsAssets.icon('fiat_icon.svg');
+  static final hyundai = ConstsAssets.icon('hyundai_icon.svg');
 }

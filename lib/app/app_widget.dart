@@ -18,7 +18,7 @@ class AppWidget extends StatelessWidget {
     );
     return MaterialApp.router(
       title: 'EaseCar',
-      theme: ThemeData(primarySwatch: Colors.blue),
+      theme: ThemeData(primarySwatch: Colors.blue, fontFamily: 'Rubik'),
       routerConfig: Modular.routerConfig,
       debugShowCheckedModeBanner: false,
       supportedLocales: const [

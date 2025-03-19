@@ -124,5 +124,19 @@
     "bottomNavigationBarMessage": "Mensagem",
     "bottomNavigationBarProfile": "Perfil",
     
-    "homeSeach": "Buscar"    
+    "homeSeach": "Buscar",
+    "homeNewCars": "Carros novos",
+    "homePreOwnedCars": "Carros Seminovos",
+    "homeBrands": "Marcas",
+    "homeFrom": "De",  
+    "homeSeeDetails": "Ver detalhes",
+    "homeErrorLoadingBrandsMessage": "Ocorreu um erro ao listar marcas. Tente novamente.",
+    "homeErrorLoadingVehiclesMessage": "Ocorreu um erro ao listar veículos. Tente novamente.",
+    "homeErrorNoVehiclesForBrandMessage": "Nenhum veículo disponível para essa marca.\nExperimente selecionar outra opção.",
+
+    "vehicleStatusApproved": "Aprovado",
+    "vehicleStatusRejected": "Reprovado",
+    "vehicleStatusUnderAnalysis": "Em análise",
+
+    "vehicleStoreTypeDealership": "Concessionária"
 }

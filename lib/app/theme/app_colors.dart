@@ -12,4 +12,10 @@ class AppColors {
   static const Color statePadding = Color(0xffDBCB38);
   static const Color lightGray = Color(0xffEDEDED);
   static const Color softGray = Color(0xffCAC4C4);
+  static const Color softBlue = Color(0xffE6EEF6);
+  static const Color darkerSoftBlue = Color(0xffC1D4E7);
+  static const Color mediumGray = Color(0xff9D9D9D);
+  static const Color brightBlue = Color(0xff1582F1);
+  static const Color brightGreen = Color(0xff1B9818);
+  static const Color intenseRedGreen = Color(0xffDA4430);
 }
