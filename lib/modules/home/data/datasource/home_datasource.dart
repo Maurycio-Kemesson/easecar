@@ -6,4 +6,5 @@ abstract class HomeDatasource {
   Future<List<BrandModel>> fetchBrands();
   Future<List<VehicleModel>> fetchNewVehicles();
   Future<List<VehicleModel>> fetchUsedVehicles();
+  Future<VehicleModel> fetchVehicleDetails(String id);
 }

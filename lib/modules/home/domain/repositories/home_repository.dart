@@ -7,4 +7,5 @@ abstract class HomeRepository {
   Future<Either<Exception, List<BrandModel>>> fetchBrands();
   Future<Either<Exception, List<VehicleModel>>> fetchNewVehicles();
   Future<Either<Exception, List<VehicleModel>>> fetchUsedVehicles();
+  Future<Either<Exception, VehicleModel>> fetchVehicleDetails(String id);
 }

@@ -132,10 +132,27 @@
     "homeSeeDetails": "See details",
     "homeErrorLoadingBrandsMessage": "An error occurred while listing brands. Please try again.",
     "homeErrorNoVehiclesForBrandMessage": "No vehicles available for this brand.\nTry selecting another option.",
+    "homeErrorLoadingDetailsMessage": "An error occurred while fetching vehicle details. Please try again.",
 
     "vehicleStatusApproved": "Approved",
     "vehicleStatusRejected": "Rejected",
     "vehicleStatusUnderAnalysis": "Under analysis",
 
-    "vehicleStoreTypeDealership": "Dealership"
+    "vehicleStoreTypeDealership": "Dealership",
+
+    "vehicleDetails": "Vehicle Details",
+    "vehicleDetailsVehicle": "Vehicle",
+    "vehicleDetailsProfile": "Profile",
+    "vehicleDetailsAbout": "About",
+    "vehicleDetailsYear": "Year",
+    "vehicleDetailsGearbox": "Gearbox",
+    "vehicleDetailsDoors": "Doors",
+    "vehicleDetailsFuel": "Fuel",
+    "vehicleDetailsArmored": "Armored",
+    "vehicleDetailsColor": "Color",
+    "vehicleDetailsItems": "Vehicle Items",
+    "vehicleDetailsDeleteAd": "Delete Ad?",
+    "vehicleDetailsNew": "New",
+    "vehicleDetailsUsed": "Used",
+    "vehicleDetailsEdit": "Edit"
 } 

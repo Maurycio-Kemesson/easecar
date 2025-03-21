@@ -1,3 +1,4 @@
+import '../../domain/enuns/vehicle_condition_enum.dart';
 import '../../domain/enuns/vehicle_status_enum.dart';
 import '../../domain/enuns/store_type_enum.dart';
 import 'brand_model.dart';
@@ -13,7 +14,15 @@ class VehicleModel {
   String state;
   StoreTypeEnum storeType;
   VehicleStatusEnum status;
+  VehicleConditionEnum condition;
   BrandModel brand;
+  int year;
+  String gearbox;
+  int doors;
+  String fuel;
+  bool armored;
+  List<String> items;
+  String about;
 
   VehicleModel({
     required this.id,
@@ -26,7 +35,15 @@ class VehicleModel {
     required this.state,
     required this.storeType,
     required this.status,
+    required this.condition,
     required this.brand,
+    required this.year,
+    required this.gearbox,
+    required this.doors,
+    required this.fuel,
+    required this.armored,
+    required this.items,
+    required this.about,
   });
 
   factory VehicleModel.fromJson(Map<String, dynamic> json) {
@@ -43,7 +60,16 @@ class VehicleModel {
           .firstWhere((e) => e.toString() == 'StoreType.${json['store_type']}'),
       status: VehicleStatusEnum.values
           .firstWhere((e) => e.toString() == 'CarStatus.${json['status']}'),
+      condition: VehicleConditionEnum.values.firstWhere(
+          (e) => e.toString() == 'CarCondition.${json['condition']}'),
       brand: json['brand'],
+      year: json['year'],
+      gearbox: json['gearbox'],
+      doors: json['doors'],
+      fuel: json['fuel'],
+      armored: json['armored'],
+      items: List<String>.from(json['items'] ?? []),
+      about: json['about'],
     );
   }
 
@@ -59,7 +85,15 @@ class VehicleModel {
       'state': state,
       'store_type': storeType.toString().split('.').last,
       'status': status.toString().split('.').last,
+      'condition': condition.toString().split('.').last,
       'brand': brand,
+      'year': year,
+      'gearbox': gearbox,
+      'doors': doors,
+      'fuel': fuel,
+      'armored': armored,
+      'items': items,
+      'about': about,
     };
   }
 }

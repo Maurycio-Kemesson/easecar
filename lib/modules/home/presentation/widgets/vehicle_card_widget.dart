@@ -1,7 +1,6 @@
 import 'package:easecar/app/theme/app_colors.dart';
 import 'package:easecar/app/theme/app_dimensions.dart';
 import 'package:easecar/core/conts/icons.dart';
-import 'package:easecar/modules/home/domain/enuns/store_type_enum.dart';
 import 'package:easecar/modules/home/domain/enuns/vehicle_status_enum.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
@@ -9,13 +8,16 @@ import 'package:intl/intl.dart';
 import 'package:localization/localization.dart';
 
 import '../../data/models/vehicle_model.dart';
+import 'story_type_widget.dart';
 
 class VehicleCardWidget extends StatelessWidget {
   final VehicleModel vehicle;
+  final Function()? onDetailsPressed;
 
   const VehicleCardWidget({
     Key? key,
     required this.vehicle,
+    required this.onDetailsPressed,
   }) : super(key: key);
 
   @override
@@ -119,24 +121,7 @@ class VehicleCardWidget extends StatelessWidget {
                     ),
                   ),
                   const SizedBox(height: AppDimensions.tiny),
-                  Container(
-                    decoration: BoxDecoration(
-                      color: AppColors.brightBlue,
-                      borderRadius: BorderRadius.circular(3.0),
-                    ),
-                    padding: const EdgeInsets.symmetric(
-                      horizontal: AppDimensions.tinyExtra,
-                      vertical: AppDimensions.line,
-                    ),
-                    child: Text(
-                      vehicle.storeType.value,
-                      style: const TextStyle(
-                        fontSize: 7,
-                        color: AppColors.white,
-                        fontWeight: FontWeight.w400,
-                      ),
-                    ),
-                  ),
+                  StoreTypeWidget(type: vehicle.storeType),
                   const SizedBox(height: AppDimensions.tinyExtra),
                   Container(
                     decoration: BoxDecoration(
@@ -158,7 +143,7 @@ class VehicleCardWidget extends StatelessWidget {
                   ),
                   const SizedBox(height: AppDimensions.tiny),
                   TextButton(
-                    onPressed: () {},
+                    onPressed: onDetailsPressed,
                     style: TextButton.styleFrom(
                       padding: EdgeInsets.zero,
                       minimumSize: const Size(0, 0),

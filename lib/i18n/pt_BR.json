@@ -133,10 +133,27 @@
     "homeErrorLoadingBrandsMessage": "Ocorreu um erro ao listar marcas. Tente novamente.",
     "homeErrorLoadingVehiclesMessage": "Ocorreu um erro ao listar veículos. Tente novamente.",
     "homeErrorNoVehiclesForBrandMessage": "Nenhum veículo disponível para essa marca.\nExperimente selecionar outra opção.",
+    "homeErrorLoadingDetailsMessage": "Ocorreu um erro ao buscar por detalhes do veículo. Tente novamente.",
 
     "vehicleStatusApproved": "Aprovado",
     "vehicleStatusRejected": "Reprovado",
     "vehicleStatusUnderAnalysis": "Em análise",
 
-    "vehicleStoreTypeDealership": "Concessionária"
+    "vehicleStoreTypeDealership": "Concessionária",
+    
+    "vehicleDetails": "Detalhes do veículo",
+    "vehicleDetailsVehicle": "Veículo",
+    "vehicleDetailsProfile": "Perfil",
+    "vehicleDetailsAbout": "Sobre",
+    "vehicleDetailsYear": "Ano",
+    "vehicleDetailsGearbox": "Câmbio",
+    "vehicleDetailsDoors": "Portas",
+    "vehicleDetailsFuel": "Combustível",
+    "vehicleDetailsArmored": "Blindado",
+    "vehicleDetailsColor": "Cor",
+    "vehicleDetailsItems": "Itens do veículo",
+    "vehicleDetailsDeleteAd": "Excluir anúncio?",
+    "vehicleDetailsNew": "Novo",
+    "vehicleDetailsUsed": "Seminovo",
+    "vehicleDetailsEdit": "Editar"
 }

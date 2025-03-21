@@ -1,4 +1,5 @@
 import 'package:easecar/app/app_routes.dart';
+import 'package:easecar/modules/home/submodules/vehicle_details/vehicle_details_module.dart';
 import 'package:flutter_modular/flutter_modular.dart';
 
 import 'data/datasource/home_datasource.dart';
@@ -8,6 +9,7 @@ import 'domain/repositories/home_repository.dart';
 import 'domain/usecases/fetch_brands_usecase.dart';
 import 'domain/usecases/fetch_new_vehicles_usecase.dart';
 import 'domain/usecases/fetch_used_vehicles_usecase.dart';
+import 'domain/usecases/fetch_vehicle_details_usecase.dart';
 import 'presentation/controllers/home_controller.dart';
 import 'presentation/pages/home_page.dart';
 
@@ -22,8 +24,13 @@ class HomeModule extends Module {
     i.addLazySingleton<HomeRepository>(HomeRepositoryImp.new);
 
     i.addLazySingleton<FetchBrandsUsecase>(FetchBrandsUsecaseImp.new);
-    i.addLazySingleton<FetchNewVehicles>(FetchNewVehiclesImp.new);
-    i.addLazySingleton<FetchUsedVehicles>(FetchUsedVehiclesImp.new);
+    i.addLazySingleton<FetchNewVehiclesUsecase>(FetchNewVehiclesUsecaseImp.new);
+    i.addLazySingleton<FetchUsedVehiclesUsecase>(
+      FetchUsedVehiclesUsecaseImp.new,
+    );
+    i.addLazySingleton<FetchVehicleDetailsUsecase>(
+      FetchVehicleDetailsUsecaseImp.new,
+    );
 
     i.addLazySingleton<HomeController>(HomeControllerImp.new);
   }
@@ -31,6 +38,7 @@ class HomeModule extends Module {
   @override
   void routes(RouteManager r) {
     r.child(AppRoutes.home, child: (_) => const HomePage());
+    r.module(Modular.initialRoute, module: VehicleDetailsModule());
     super.routes(r);
   }
 }

@@ -1,6 +1,7 @@
 import 'package:easecar/core/conts/icons.dart';
 
 import '../../../domain/enuns/store_type_enum.dart';
+import '../../../domain/enuns/vehicle_condition_enum.dart';
 import '../../../domain/enuns/vehicle_status_enum.dart';
 import '../../models/brand_model.dart';
 import '../../models/vehicle_model.dart';
@@ -34,7 +35,15 @@ class HomeDatasourceImp implements HomeDatasource {
         state: 'CE',
         storeType: StoreTypeEnum.dealership,
         status: VehicleStatusEnum.approved,
+        condition: VehicleConditionEnum.newVehicle,
         brand: BrandModel(name: 'Honda', image: AppIcons.honda),
+        year: 2024,
+        gearbox: 'Automático',
+        doors: 4,
+        fuel: 'Gasolina',
+        armored: false,
+        items: ['Airbags', 'Rodas de liga leve', 'Ar condicionado'],
+        about: '',
       ),
       VehicleModel(
         id: '4',
@@ -47,7 +56,15 @@ class HomeDatasourceImp implements HomeDatasource {
         state: 'CE',
         storeType: StoreTypeEnum.dealership,
         status: VehicleStatusEnum.approved,
+        condition: VehicleConditionEnum.newVehicle,
         brand: BrandModel(name: 'Ford', image: AppIcons.ford),
+        year: 2024,
+        gearbox: 'Automático',
+        doors: 4,
+        fuel: 'Diesel',
+        armored: false,
+        items: ['Trava elétrica', 'Ar condicionado', 'Câmera de ré'],
+        about: '',
       ),
       VehicleModel(
         id: '1',
@@ -60,7 +77,15 @@ class HomeDatasourceImp implements HomeDatasource {
         state: 'CE',
         storeType: StoreTypeEnum.dealership,
         status: VehicleStatusEnum.approved,
+        condition: VehicleConditionEnum.newVehicle,
         brand: BrandModel(name: 'Citroen', image: AppIcons.citroen),
+        year: 2024,
+        gearbox: 'Manual',
+        doors: 4,
+        fuel: 'Gasolina',
+        armored: false,
+        items: ['Rádio', 'Ar condicionado'],
+        about: '',
       ),
       VehicleModel(
         id: '4',
@@ -73,7 +98,15 @@ class HomeDatasourceImp implements HomeDatasource {
         state: 'CE',
         storeType: StoreTypeEnum.dealership,
         status: VehicleStatusEnum.approved,
+        condition: VehicleConditionEnum.newVehicle,
         brand: BrandModel(name: 'Hyundai', image: AppIcons.hyundai),
+        year: 2024,
+        gearbox: 'Automático',
+        doors: 4,
+        fuel: 'Gasolina',
+        armored: false,
+        items: ['Sensor de estacionamento', 'Câmera de ré'],
+        about: '',
       ),
       VehicleModel(
         id: '5',
@@ -86,7 +119,15 @@ class HomeDatasourceImp implements HomeDatasource {
         state: 'CE',
         storeType: StoreTypeEnum.dealership,
         status: VehicleStatusEnum.rejected,
+        condition: VehicleConditionEnum.newVehicle,
         brand: BrandModel(name: 'Ford', image: AppIcons.ford),
+        year: 2024,
+        gearbox: 'Automático',
+        doors: 4,
+        fuel: 'Flex',
+        armored: false,
+        items: ['Ar condicionado', 'Rodas de liga leve', 'Central multimídia'],
+        about: '',
       ),
     ];
   }
@@ -106,7 +147,15 @@ class HomeDatasourceImp implements HomeDatasource {
         state: 'CE',
         storeType: StoreTypeEnum.dealership,
         status: VehicleStatusEnum.approved,
+        condition: VehicleConditionEnum.usedVehicle,
         brand: BrandModel(name: 'Hyundai', image: AppIcons.hyundai),
+        year: 2017,
+        gearbox: 'Manual',
+        doors: 4,
+        fuel: 'Flex',
+        armored: false,
+        items: ['Airbags', 'Ar condicionado'],
+        about: '',
       ),
       VehicleModel(
         id: '2',
@@ -119,7 +168,15 @@ class HomeDatasourceImp implements HomeDatasource {
         state: 'CE',
         storeType: StoreTypeEnum.dealership,
         status: VehicleStatusEnum.underReview,
+        condition: VehicleConditionEnum.usedVehicle,
         brand: BrandModel(name: 'Fiat', image: AppIcons.fiat),
+        year: 2010,
+        gearbox: 'Manual',
+        doors: 4,
+        fuel: 'Gasolina',
+        armored: false,
+        items: ['Ar condicionado', 'Rádio'],
+        about: '',
       ),
       VehicleModel(
         id: '3',
@@ -132,8 +189,42 @@ class HomeDatasourceImp implements HomeDatasource {
         state: 'CE',
         storeType: StoreTypeEnum.dealership,
         status: VehicleStatusEnum.rejected,
+        condition: VehicleConditionEnum.usedVehicle,
         brand: BrandModel(name: 'Fiat', image: AppIcons.fiat),
+        year: 2020,
+        gearbox: 'Automático',
+        doors: 4,
+        fuel: 'Flex',
+        armored: false,
+        items: ['Ar condicionado', 'Central multimídia'],
+        about: '',
       ),
     ];
+  }
+
+  @override
+  Future<VehicleModel> fetchVehicleDetails(String id) async {
+    await Future.delayed(const Duration(seconds: 2));
+    return VehicleModel(
+      id: '1',
+      model: 'Honda Civic 2024',
+      km: 0,
+      color: 'Prata',
+      oldValue: 120000.00,
+      newValue: 115000.00,
+      city: 'Fortaleza',
+      state: 'CE',
+      storeType: StoreTypeEnum.dealership,
+      status: VehicleStatusEnum.approved,
+      brand: BrandModel(name: 'Honda', image: AppIcons.honda),
+      year: 2024,
+      gearbox: 'Automático',
+      doors: 4,
+      fuel: 'Gasolina',
+      armored: false,
+      items: ['Airbags', 'Rodas de liga leve', 'Ar condicionado'],
+      condition: VehicleConditionEnum.newVehicle,
+      about: 'Único dono, revisões feitas na autorizada, pacote premium (som beats), 100% original, ja instalado o engate, manual e chave reserva, para quem procura um carro econômico e de qualidade absoluta.\nEsta a procura de comprar um carro novo ou seminovo, ou até mesmo alugar? aqui tem. Gostou desse carro? Temos uma equipe de consultores, concessionaria e locadora disponíveis para tirar todas as suas dúvidas de forma rápida, segura e descomplicada.',
+    );
   }
 }

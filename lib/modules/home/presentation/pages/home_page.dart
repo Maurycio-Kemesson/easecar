@@ -1,7 +1,8 @@
+import 'package:easecar/app/app_routes.dart';
 import 'package:easecar/app/theme/app_colors.dart';
 import 'package:easecar/app/theme/app_dimensions.dart';
 import 'package:easecar/app/theme/text_style_custom.dart';
-import 'package:easecar/core/widgets/skeleton_loader_widget.dart';
+import 'package:easecar/core/widgets/skeleton_loader_custom.dart';
 import 'package:easecar/modules/home/data/models/vehicle_model.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_modular/flutter_modular.dart';
@@ -194,7 +195,7 @@ class _HomePageState extends State<HomePage>
                           scrollDirection: Axis.horizontal,
                           itemCount: 4,
                           itemBuilder: (context, index) {
-                            return const SkeletonLoaderWidget(
+                            return const SkeletonLoaderCustom(
                               height: 60,
                               width: 60,
                             );
@@ -228,7 +229,7 @@ class _HomePageState extends State<HomePage>
                           top: AppDimensions.mediumExtra,
                           bottom: AppDimensions.tiny,
                         ),
-                        child: SkeletonLoaderWidget(
+                        child: SkeletonLoaderCustom(
                           height: 180,
                           width: double.infinity,
                         ),
@@ -272,8 +273,15 @@ class _HomePageState extends State<HomePage>
                                     controller.selectedBrand.value?.name
                                         .trim()
                                         .toLowerCase())
-                            .map((vehicle) =>
-                                VehicleCardWidget(vehicle: vehicle))
+                            .map(
+                              (vehicle) => VehicleCardWidget(
+                                vehicle: vehicle,
+                                onDetailsPressed: () => Modular.to.pushNamed(
+                                  AppRoutes.details,
+                                  arguments: vehicle.id,
+                                ),
+                              ),
+                            )
                             .toList(),
                   ),
           ),

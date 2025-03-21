@@ -64,4 +64,11 @@ class TextStyleCustom {
     fontWeight: FontWeight.w600,
     fontFamily: 'Rubik',
   );
+
+  static TextStyle titleAppBar = const TextStyle(
+    fontSize: 16.0,
+    color: AppColors.primaryColor,
+    fontWeight: FontWeight.w600,
+    fontFamily: 'Rubik',
+  );
 }

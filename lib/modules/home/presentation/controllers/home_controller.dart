@@ -37,8 +37,8 @@ abstract class HomeController extends ChangeNotifier {
 
 class HomeControllerImp extends HomeController {
   FetchBrandsUsecase fetchBrandsUsecase;
-  FetchNewVehicles fetchNewVehiclesUsecase;
-  FetchUsedVehicles fetchUsedVehiclesUsecase;
+  FetchNewVehiclesUsecase fetchNewVehiclesUsecase;
+  FetchUsedVehiclesUsecase fetchUsedVehiclesUsecase;
 
   HomeControllerImp({
     required this.fetchBrandsUsecase,

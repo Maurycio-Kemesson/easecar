@@ -39,4 +39,14 @@ class HomeRepositoryImp implements HomeRepository {
       return Left(e);
     }
   }
+
+  @override
+  Future<Either<Exception, VehicleModel>> fetchVehicleDetails(String id) async {
+    try {
+      var data = await datasource.fetchVehicleDetails(id);
+      return Right(data);
+    } on Exception catch (e) {
+      return Left(e);
+    }
+  }
 }
