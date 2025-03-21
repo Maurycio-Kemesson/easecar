@@ -8,6 +8,7 @@ import 'package:localization/localization.dart';
 
 import '../controllers/vehicle_details_controller.dart';
 import '../widgets/about/about_widget.dart';
+import '../widgets/profile/profile_widget.dart';
 import '../widgets/vehicle/vehicle_details_widget.dart';
 
 class VehicleDetailsPage extends StatefulWidget {
@@ -51,6 +52,9 @@ class _VehicleDetailsPageState extends State<VehicleDetailsPage>
         controller.isDetailsLoading,
         controller.details,
         controller.currentImageIndex,
+        controller.feedbacks,
+        controller.isFeedbacksLoading,
+        controller.story,
       ]),
       builder: (context, child) {
         return SafeArea(
@@ -112,10 +116,12 @@ class _VehicleDetailsPageState extends State<VehicleDetailsPage>
                   pageController: _pageController,
                   isLoading: controller.isDetailsLoading.value,
                 ),
-                AboutWidget(
-                  about: controller.details.value.about,
-                  isLoading: controller.isDetailsLoading.value,
-                  onEditPressed: () {},
+                ProfileWidget(
+                  feedbacks: controller.feedbacks.value,
+                  story: controller.story.value,
+                  onMyAdsPressed: () {},
+                  onSeeMorePressed: () {},
+                  isLoading: controller.isFeedbacksLoading.value,
                 ),
                 AboutWidget(
                   about: controller.details.value.about,

@@ -155,5 +155,17 @@
     "vehicleDetailsDeleteAd": "Excluir anúncio?",
     "vehicleDetailsNew": "Novo",
     "vehicleDetailsUsed": "Seminovo",
-    "vehicleDetailsEdit": "Editar"
+    "vehicleDetailsEdit": "Editar",
+    "vehicleDetailsErrorLoadingFeedbacksMessage": "Ocorreu um erro ao buscar por feedbacks. Tente novamente.",
+    "vehicleDetailsErrorNotFoundFeedbacksMessage": "Não há resultados disponíveis no momento.",
+    "vehicleDetailsAds": "+{count} anúncios",
+    "@vehicleDetailsAds": {
+        "description": "Número de anúncios disponíveis",
+        "placeholders": {
+            "count": 1
+        }
+    },
+    "vehicleDetailsMyAds": "Meus anúncios",
+    "vehicleDetailsMyFeedbacks": "Meus feedbacks",
+    "vehicleDetailsSeeMore": "Ver mais"
 }

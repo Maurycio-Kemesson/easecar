@@ -1,5 +1,6 @@
 import 'package:easecar/modules/home/data/models/brand_model.dart';
 
+import '../models/feedback_model.dart';
 import '../models/vehicle_model.dart';
 
 abstract class HomeDatasource {
@@ -7,4 +8,5 @@ abstract class HomeDatasource {
   Future<List<VehicleModel>> fetchNewVehicles();
   Future<List<VehicleModel>> fetchUsedVehicles();
   Future<VehicleModel> fetchVehicleDetails(String id);
+  Future<List<FeedbackModel>> fetchFeedbacks();
 }

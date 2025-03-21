@@ -16,4 +16,5 @@ class AppIcons {
   static final hyundai = ConstsAssets.icon('hyundai_icon.svg');
   static final share = ConstsAssets.icon('share_icon.svg');
   static final arrowBack = ConstsAssets.icon('arrow_back_icon.svg');
+  static final location = ConstsAssets.icon('location_icon.svg');
 }

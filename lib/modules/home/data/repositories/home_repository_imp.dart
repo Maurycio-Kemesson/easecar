@@ -3,6 +3,7 @@ import 'package:either_dart/either.dart';
 
 import '../../domain/repositories/home_repository.dart';
 import '../datasource/home_datasource.dart';
+import '../models/feedback_model.dart';
 import '../models/vehicle_model.dart';
 
 class HomeRepositoryImp implements HomeRepository {
@@ -44,6 +45,16 @@ class HomeRepositoryImp implements HomeRepository {
   Future<Either<Exception, VehicleModel>> fetchVehicleDetails(String id) async {
     try {
       var data = await datasource.fetchVehicleDetails(id);
+      return Right(data);
+    } on Exception catch (e) {
+      return Left(e);
+    }
+  }
+
+  @override
+  Future<Either<Exception, List<FeedbackModel>>> fetchFeedbacks() async {
+    try {
+      var data = await datasource.fetchFeedbacks();
       return Right(data);
     } on Exception catch (e) {
       return Left(e);

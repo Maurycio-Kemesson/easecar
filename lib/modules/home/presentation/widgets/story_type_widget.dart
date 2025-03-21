@@ -6,17 +6,19 @@ import '../../domain/enuns/store_type_enum.dart';
 
 class StoreTypeWidget extends StatelessWidget {
   final StoreTypeEnum type;
+  final Color? color;
 
   const StoreTypeWidget({
     Key? key,
     required this.type,
+    this.color,
   }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return Container(
       decoration: BoxDecoration(
-        color: AppColors.brightBlue,
+        color: color ?? AppColors.brightBlue,
         borderRadius: BorderRadius.circular(3.0),
       ),
       padding: const EdgeInsets.symmetric(

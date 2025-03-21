@@ -18,4 +18,9 @@ class AppColors {
   static const Color brightBlue = Color(0xff1582F1);
   static const Color brightGreen = Color(0xff1B9818);
   static const Color intenseRedGreen = Color(0xffDA4430);
+  static const Color softBlush = Color(0xffFDF5F5);
+  static const Color steelBlue = Color(0xff2E3E4B);
+  static const Color slateGray = Color(0xff737E86);
+  static const Color deepNavyBlue = Color(0xff174574);
+  static const Color lightGold = Color(0xffFADA68);
 }

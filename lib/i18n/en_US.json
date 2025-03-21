@@ -154,5 +154,17 @@
     "vehicleDetailsDeleteAd": "Delete Ad?",
     "vehicleDetailsNew": "New",
     "vehicleDetailsUsed": "Used",
-    "vehicleDetailsEdit": "Edit"
+    "vehicleDetailsEdit": "Edit",
+    "vehicleDetailsEditErrorLoadingFeedbacksMessage": "An error occurred while retrieving feedback. Please try again.",
+    "vehicleDetailsErrorNotFoundFeedbacksMessage": "There are no results available at this time.",
+    "vehicleDetailsAds": "+{count} ads",
+    "@vehicleDetailsAds": {
+        "description": "Number of ads available",
+        "placeholders": {
+            "count": {}
+        }
+    },
+    "vehicleDetailsMyAds": "My ads",
+    "vehicleDetailsMyFeedbacks": "My feedbacks",
+    "vehicleDetailsSeeMore": "See more"
 } 

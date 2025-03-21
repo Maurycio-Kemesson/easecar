@@ -4,6 +4,7 @@ import '../../../domain/enuns/store_type_enum.dart';
 import '../../../domain/enuns/vehicle_condition_enum.dart';
 import '../../../domain/enuns/vehicle_status_enum.dart';
 import '../../models/brand_model.dart';
+import '../../models/feedback_model.dart';
 import '../../models/vehicle_model.dart';
 import '../home_datasource.dart';
 
@@ -224,7 +225,45 @@ class HomeDatasourceImp implements HomeDatasource {
       armored: false,
       items: ['Airbags', 'Rodas de liga leve', 'Ar condicionado'],
       condition: VehicleConditionEnum.newVehicle,
-      about: 'Único dono, revisões feitas na autorizada, pacote premium (som beats), 100% original, ja instalado o engate, manual e chave reserva, para quem procura um carro econômico e de qualidade absoluta.\nEsta a procura de comprar um carro novo ou seminovo, ou até mesmo alugar? aqui tem. Gostou desse carro? Temos uma equipe de consultores, concessionaria e locadora disponíveis para tirar todas as suas dúvidas de forma rápida, segura e descomplicada.',
+      about:
+          'Único dono, revisões feitas na autorizada, pacote premium (som beats), 100% original, ja instalado o engate, manual e chave reserva, para quem procura um carro econômico e de qualidade absoluta.\nEsta a procura de comprar um carro novo ou seminovo, ou até mesmo alugar? aqui tem. Gostou desse carro? Temos uma equipe de consultores, concessionaria e locadora disponíveis para tirar todas as suas dúvidas de forma rápida, segura e descomplicada.',
     );
+  }
+
+  @override
+  Future<List<FeedbackModel>> fetchFeedbacks() async {
+    await Future.delayed(const Duration(seconds: 2));
+    return [
+      FeedbackModel(
+        clientName: 'Carlos Souza',
+        clientPhoto: 'https://randomuser.me/api/portraits/men/1.jpg',
+        comment: 'Ótimo atendimento e veículo impecável!',
+        rating: 4.8,
+      ),
+      FeedbackModel(
+        clientName: 'Ana Oliveira',
+        clientPhoto: 'https://randomuser.me/api/portraits/women/2.jpg',
+        comment: 'Muito satisfeita com a compra, recomendo!',
+        rating: 5.0,
+      ),
+      FeedbackModel(
+        clientName: 'Pedro Lima',
+        clientPhoto: 'https://randomuser.me/api/portraits/men/3.jpg',
+        comment: 'Atendimento bom, mas o carro tinha pequenos detalhes.',
+        rating: 3.9,
+      ),
+      FeedbackModel(
+        clientName: 'Mariana Ferreira',
+        clientPhoto: 'https://randomuser.me/api/portraits/women/4.jpg',
+        comment: 'Ótima experiência, voltarei a comprar aqui!',
+        rating: 4.5,
+      ),
+      FeedbackModel(
+        clientName: 'Lucas Martins',
+        clientPhoto: 'https://randomuser.me/api/portraits/men/5.jpg',
+        comment: 'Carro entregue no prazo e em perfeitas condições!',
+        rating: 4.7,
+      ),
+    ];
   }
 }
